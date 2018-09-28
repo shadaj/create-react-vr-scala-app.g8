@@ -1,5 +1,5 @@
-# Create React VR Scala App
-Create [React VR](https://facebook.github.io/react-vr/) apps in [Scala](https://scala-lang.org/) (via [Slinky](https://github.com/shadaj/slinky)) with no build configuration
+# Create React 360 Scala App
+Create [React 360](https://facebook.github.io/react-360/) apps in [Scala](https://scala-lang.org/) (via [Slinky](https://github.com/shadaj/slinky)) with no build configuration
 
 ## Quick Overview
 Make sure you have SBT and NPM installed.
@@ -19,7 +19,7 @@ npm start
 
 As soon as you start, React VR will launch a development server that bundles and serves your app. If you open the link printed to the console, you should see your VR app.
 
-When you're ready to package a production app, create a minified bundle with `sbt fullOptJS`, modify `index.vr.js` to use the `-fullopt.js` file and follow the [React VR Instructions](https://facebook.github.io/react-vr/docs/publishing.html).
+When you're ready to package a production app, create a minified bundle with `sbt fullOptJS`, modify `index.vr.js` to use the `-fullopt.js` file and follow the [React VR Instructions](https://facebook.github.io/react-360/docs/publish.html).
 
 ### Get Started Immediately
 You **don’t** need to install or configure tools like Metro or Babel.
@@ -65,16 +65,14 @@ No configuration or complicated folder structures, just the files you need to bu
 Once the installation is done, you can run some commands inside the project folder:
 
 ### `sbt "~fastOptJS"`
-Runs the app in development mode with hot-reloading enabled.
+Runs the app in development mode.
 
 Run `npm start` to see your app
-
-The app will automatically reload if you make changes to the code (and hot-reloading is [enabled](https://facebook.github.io/react-vr/docs/dev-tools.html#hot-reloading)). You will see compilation errors in your console.
 
 ### `sbt fullOptJS`
 Builds the app for production. It optimizes the build for the best performance and minifies the build using Google Closure Compiler.
 
-After building your Scala.js code, edit `index.vr.js` to point to the new `-fastopt.js` file. Then follow the [React VR instructions](https://facebook.github.io/react-vr/docs/publishing.html) to build your app.
+After building your Scala.js code, edit `index.vr.js` to point to the new `-fastopt.js` file. Then follow the [React VR instructions](https://facebook.github.io/react-360/docs/publish.html) to build your app.
 
 Your app is ready to be deployed.
 
@@ -86,7 +84,7 @@ Your app is ready to be deployed.
 ## What’s Inside?
 The generated project uses the following tools and libraries:
 + [SBT](http://www.scala-sbt.org/) to compile Scala sources and [NPM](https://www.npmjs.com/) to resolve JavaScript package dependencies
-+ React VR interface and hot reloading: [Slinky](https://github.com/shadaj/slinky)
++ React 360 interface and hot reloading: [Slinky](https://github.com/shadaj/slinky)
 
 ## Why Use This?
 With create-react-vr-scala-app you can quickly bootstrap a new application using Scala and React VR. Your environment will have everything you need to build a new Scala app:

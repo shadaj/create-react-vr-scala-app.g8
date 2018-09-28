@@ -1,4 +1,4 @@
-package $package$
+package hello.world
 
 import slinky.core._
 import slinky.core.annotations.react
@@ -16,21 +16,18 @@ import scala.scalajs.js
   def render() = {
     View(
       style = js.Dynamic.literal(
-        layoutOrigin = js.Array(0.5, 0.5),
-        transform = js.Array(
-          js.Dynamic.literal(
-            translate = js.Array(0, 0, -6)
-          )
-        )
+        width = 4680,
+        height = 900,
+        alignItems = "center",
+        flexDirection = "column"
       )
     )(
-      Pano(source = ReactVR.asset("chess-world.jpg")),
       Text(
         style = js.Dynamic.literal(
           backgroundColor = "#777879",
-          fontSize = 0.8,
-          paddingLeft = 0.2,
-          paddingRight = 0.2,
+          fontSize = 100,
+          paddingLeft = 20,
+          paddingRight = 20,
           textAlign = "center",
           textAlignVertical = "center"
         )
@@ -38,9 +35,10 @@ import scala.scalajs.js
       Text(
         style = js.Dynamic.literal(
           backgroundColor = "#777879",
-          fontSize = 0.4,
-          paddingLeft = 0.2,
-          paddingRight = 0.2,
+          fontSize = 40,
+          paddingLeft = 20,
+          paddingRight = 20,
+          marginTop = 20,
           textAlign = "center",
           textAlignVertical = "center",
           transform = js.Array(
@@ -59,16 +57,12 @@ import scala.scalajs.js
           style = js.Dynamic.literal(
             backgroundColor = "#ffffff",
             color = "blue",
-            fontSize = 0.4,
-            paddingLeft = 0.2,
-            paddingRight = 0.2,
+            fontSize = 40,
+            paddingLeft = 20,
+            paddingRight = 20,
+            marginTop = 20,
             textAlign = "center",
-            textAlignVertical = "center",
-            transform = js.Array(
-              js.Dynamic.literal(
-                translate = js.Array(0, 0, 0.5)
-              )
-            )
+            textAlignVertical = "center"
           )
         )("Click Me!")
       )
